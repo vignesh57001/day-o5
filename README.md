@@ -32,3 +32,27 @@
                               return firstName.charAt(0) + middleName.charAt(0)+lastName.charAt(0);
                               };
                       console.log(getfirst("Charlie","Suresh", "Brown"));
+                      
+                      
+                      
+                      2) programs in anonymous function and iife functions :
+a)odd numbers :
+    1) arrow function:       
+             let arr=[1,2,3,4,5];
+                   let odd = function () {
+                   let odd= arr.filter(num => num %2 ==1)
+                   console.log(odd)
+                   }
+                   odd()
+     2) iife function :
+                    let a=[0,1,2,3,4,5,6,7,8,9];
+                   (function ()  {
+                   let odd= a.filter(num => num %2 ==1);
+                   console.log(odd)
+                  })();
+b)string in title caps :
+      1) anonymous function :     
+                  var str = toTitles('hi i am vignesh menon');
+                  function toTitles(s){ return s.replace(/\w\S*/g, function(t) { 
+                  return t.charAt(0).toUpperCase() + t.substr(1).toLowerCase(); 
+                  }); }            console.log(str);  
